@@ -53,6 +53,21 @@ git push -u origin main
 2. 到域名服务商加一条 CNAME 记录：`www → <你的用户名>.github.io`
 3. 仓库 **Settings → Pages → Custom domain** 填域名并保存，GitHub 自动签发 HTTPS
 
+## 部署到国内服务器（阿里云轻量，国内直连方案）
+
+网站已可跑在 GitHub Pages；若要让国内访客物理直连（更快更稳），把站点搬到阿里云轻量服务器：
+
+1. 买阿里云轻量服务器（选 **Ubuntu 24.04 LTS**），把 `deploy/` 目录传到服务器后执行：
+   ```bash
+   bash setup-server.sh 你的域名
+   ```
+2. 把 `my-site` 内容同步到服务器 `/var/www/my-site`
+3. 配置 GitHub Actions Secrets（仓库 Settings → Secrets and variables → Actions）：
+   - `SSH_PRIVATE_KEY`：能登录服务器的 SSH 私钥
+   - `SERVER_IP`：服务器公网 IP
+4. 以后每次 `git push` 到 main，网站自动更新（见 `.github/workflows/deploy.yml`）
+5. ICP 备案通过后：域名解析到服务器 IP，再配 HTTPS（阿里云免费证书或 certbot）
+
 ## 小贴士
 
 - 改完推送后，等 1 分钟左右生效；可以在仓库 **Actions** 页看部署进度
