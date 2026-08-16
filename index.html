@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的名字 · 个人主页</title>
+  <meta name="description" content="你的名字的个人主页：关于、作品、联系方式。由 GitHub Pages 免费托管，纯 HTML/CSS/JS 手写。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e85d3f'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%23101014' font-family='serif'%3E%E4%BD%A0%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">你的名字</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#work">作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 首屏 ============ -->
+    <section class="hero" id="top">
+      <p class="hero-kicker reveal">// 你好，我是</p>
+      <h1 class="reveal">你的名字<span class="accent">。</span></h1>
+      <p class="hero-tagline reveal">一句话介绍你自己。比如「白天写代码，晚上写生活」，随你喜欢。</p>
+      <div class="hero-meta reveal">
+        <span class="meta-item">📍 你的城市</span>
+        <span class="meta-item">⚡ 你的角色 / 职业</span>
+      </div>
+      <div class="hero-actions reveal">
+        <a class="btn btn-solid" href="#work">看看我的作品</a>
+        <a class="btn btn-ghost" href="#contact">联系我</a>
+      </div>
+      <p class="hero-status reveal"><span class="accent">▍</span> 现在正在：用 GitHub Pages 装修自己的网站<span class="cursor">_</span></p>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section" id="about">
+      <header class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>关于我</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+      </header>
+      <div class="about-grid">
+        <p class="about-bio reveal">这里写一段关于你自己的话。喜欢什么、正在做什么、相信什么……两三句话就好，越真实越好。反正整个网站都是你的，想改随时改。</p>
+        <ul class="fact-list reveal">
+          <li><span class="mono-dim">常驻</span>你的城市</li>
+          <li><span class="mono-dim">职业</span>你的角色</li>
+          <li><span class="mono-dim">技能</span>HTML · CSS · JavaScript · …</li>
+          <li><span class="mono-dim">状态</span>欢迎找我聊聊</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 作品 ============ -->
+    <section class="section" id="work">
+      <header class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>作品</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+      </header>
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <div class="work-top">
+            <h3>项目一</h3>
+            <span class="work-year">2026</span>
+          </div>
+          <p>用一两句话介绍这个项目做了什么、用了什么、有什么好玩的地方。</p>
+          <ul class="work-tags"><li>HTML</li><li>CSS</li></ul>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-top">
+            <h3>项目二</h3>
+            <span class="work-year">2025</span>
+          </div>
+          <p>第二个项目。可以放你的小工具、小实验、或者任何你得意的东西。</p>
+          <ul class="work-tags"><li>JavaScript</li><li>API</li></ul>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-top">
+            <h3>项目三</h3>
+            <span class="work-year">2024</span>
+          </div>
+          <p>第三个项目。写不下就删掉一张卡片，写不够就再复制一张，随你。</p>
+          <ul class="work-tags"><li>设计</li><li>写作</li></ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 联系 / 页脚 ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner reveal">
+      <h2>保持联系</h2>
+      <p class="contact-line">想聊点什么？写封邮件给我：</p>
+      <a class="contact-mail" href="mailto:you@example.com">you@example.com</a>
+      <div class="footer-links">
+        <a href="https://github.com/你的用户名" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">微博 ↗</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">小红书 ↗</a>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> 你的名字 · 由 GitHub Pages 免费托管</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
